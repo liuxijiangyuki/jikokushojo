@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jikokushoujo</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/animate.js"></script>
+</head>
+
+<body>
+    <div id="stage">
+        <!-- 这里是头部 -->
+        <header class="header">
+            <div class="logo">
+                <a href="#" class="a_logo"><img src="img/common/logo.jpg" alt="" class="img_logo"></a>
+            </div>
+            <!-- 头部导航栏 -->
+            <nav class="gnav">
+                <ul class="ul_gnav">
+                    <li class="li_news"><a href="#" class="bg"><img src="img/common/btn_gnav_news.png" alt=""></a></li>
+                    <li class="li_intro"><a href="#" class="bg"><img src="img/common/btn_gnav_intro.png" alt=""></a>
+                    </li>
+                    <li class="li_onair"><a href="#" class="bg"><img src="img/common/btn_gnav_onair.png" alt=""></a>
+                    </li>
+                    <li class="li_story"><a href="#" class="bg"><img src="img/common/btn_gnav_story.png" alt=""></a>
+                    </li>
+                    <li class="li_chara"><a href="#" class="bg"><img src="img/common/btn_gnav_chara.png" alt=""></a>
+                    </li>
+                    <li class="li_staff"><a href="#" class="bg"><img src="img/common/btn_gnav_staffcast.png" alt=""></a>
+                    </li>
+                    <li class="li_movie"><a href="#" class="bg"><img src="img/common/btn_gnav_movie.png" alt=""></a>
+                    </li>
+                    <li class="li_music"><a href="#" class="bg"><img src="img/common/btn_gnav_music.png" alt=""></a>
+                    </li>
+                    <li class="li_package"><a href="#" class="bg"><img src="img/common/btn_gnav_package.png" alt=""></a>
+                    </li>
+                    <li class="li_tw"><a href="#" class="bg"><img src="img/common/btn_gnav_tw.png" alt=""></a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- 头部end -->
+        <!-- 回到顶部 -->
+        <a href="javascript:;" class="btn_top">
+            <img src="img/common/btn_ptop.png" alt="">
+        </a>
+        <script>
+            var btn = document.querySelector('.btn_top');
+            document.addEventListener('scroll',function() {
+                if(window.pageYOffset > 20) {
+                    btn.style.display = 'block'
+                } else {
+                    btn.style.display = 'none'
+                }
+            });
+            btn.addEventListener('click',function(){
+                animate(window,0);
+            })
+        </script>
+        <!-- 主体部分 -->
+        <div class="index_main">
+            <!-- 主视觉图 -->
+            <div class="mainvisual">
+                <div class="bg_set">
+
+                </div>
+                <div class="mainchar">
+                    <img src="img/common/mainvisual_chara_01.png" alt="">
+                </div>
+                <div class="mainchar_02">
+                    <img src="img/common/mainvisual_chara_02.png" alt="">
+                </div>
+                <div class="mainvisual_bg">
+                    <img src="img/common/mainvisual_chara_bg.png" alt="">
+                </div>
+                <div class="img_copy02">
+                    <img src="img/common/img_copy01_02.png" alt="">
+                </div>
+                <div class="img_copy0202">
+                    <img src="img/common/img_copy02_02.png" alt="">
+                </div>
+            </div>
+            <div class="bg_set2"></div>
+        </div>
+        <!-- 主体部分end -->
+
+        <!-- 主页新闻 -->
+        <div class="index_news">
+            <div class="news_box">
+                <img src="img/common/ttl_news.png" alt="" class="ttl_news">
+                <div class="btn_more">
+                    <a href="#" class="a_btn_more">
+                        <img src="img/common/btn_more.png" alt="">
+                    </a>
+                </div>
+                <div class="news_inner">
+                    <ul class="ul_news_inner">
+                        <li class="lnner_news">
+                            <a href="#">
+                                <p class="date">2018.09.13</p>
+                                <p class="news_content"><span class="span1">遂に実写映画化決定！</span><span class="span2">
+                                        2019年秋全国ロードショ</span></p>
+                            </a>
+                        </li>
+                        <li class="lnner_news">
+                            <a href="#">
+                                <p class="date">2018.09.13</p>
+                                <p class="news_content"><span class="span1">遂に実写映画化決定！</span><span class="span2">
+                                        2019年秋全国ロードショ</span></p>
+                            </a>
+                        </li>
+                        <li class="lnner_news">
+                            <a href="#">
+                                <p class="date">2018.09.13</p>
+                                <p class="news_content"><span class="span1">遂に実写映画化決定！</span><span class="span2">
+                                        2019年秋全国ロードショ</span></p>
+                            </a>
+                        </li>
+                        <li class="lnner_news">
+                            <a href="#">
+                                <p class="date">2018.09.13</p>
+                                <p class="news_content"><span class="span1">遂に実写映画化決定！</span><span class="span2">
+                                        2019年秋全国ロードショ</span></p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!-- 底部推特部分 -->
+        <div class="index_tw">
+            <div class="tw_inner">
+                <img src="img/common/ttl_tw.png" alt="" class="tw_tw">
+                <div class="bg_wiget">
+                    <a href="#">
+                        <div class="tw_content">Tweets by Aniplex_plus</div>
+                    </a>
+                </div>
+                <div class="saido">
+                    <a href="#" class="saido_img">
+                        <img src="img/bnr/bnr_archives.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- 底部推特部分end -->
+        <!-- 底部footer -->
+        <footer class="footer">
+            <p class="worn">このホームページに掲載されている一切の文書・図版・写真等を、手段や形態を問わず複製、転載することを禁じます</p>
+            <nav class="footer_a">
+                <a href="#">お問い合わせ</a>
+                <a href="#">プライバシーポリシー</a>
+                <a href="#">アニプレックス</a>
+                <p class="p_staff">©地獄少女プロジェクト／宵伽製作委員会<br>
+                    ©地獄少女プロジェクト/スカパーウェルシンク・アニプレックス</p>
+            </nav>
+        </footer>
+        <!-- 背景花 -->
+        <div class="flowers">
+            <div class="flower1"></div>
+            <div class="flower2"></div>
+            <div class="flower3"></div>
+        </div>
+    </div>
+</body>
+
+</html>

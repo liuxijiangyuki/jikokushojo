@@ -1,0 +1,416 @@
+
+/* 头部logo */
+.logo {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+.a_logo {
+    display: block;
+}
+.a_logo::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #960600;
+    opacity: 0;
+    transition: all .3s;
+    z-index: 200;
+}
+/* 鼠标选中时使logo加深色 */
+.a_logo:hover::after {
+    opacity: .2;
+}
+/* 头部导航栏 */
+.gnav {
+    position: absolute;
+    top: 50px;
+    right: 100px;
+}
+.ul_gnav {
+    list-style: none;
+}
+
+.ul_gnav li {
+    float: right;
+    margin-right: 10px;
+    position: relative;
+    width: 20px;
+}
+/* 给每个导航栏的li单独设置高 */
+.li_news {
+    height: 162px;
+}
+.li_intro {
+    height: 212px;
+}
+.li_onair {
+    height: 162px;
+}
+.li_story {
+    height: 206px;
+}
+.li_chara{
+    height: 188px;
+}
+.li_staff {
+    height: 268px;
+}
+.li_movie {
+    height: 124px;
+}
+.li_music {
+    height: 124px;
+}
+.li_package {
+    height: 220px;
+}
+.li_tw {
+    height: 170px;
+}
+.ul_gnav li::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0;
+    background-color: #000;
+    transition: all .4s;
+}
+
+.ul_gnav li::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/common/btn_gnav_chara_on.png) no-repeat;
+    opacity: 0;
+    transition: all .3s;
+    z-index: 200;
+
+}
+
+.ul_gnav  li:hover::before {
+    height: 100%;
+}
+
+.ul_gnav li:hover::after {
+    opacity: 1;
+}
+
+.ul_gnav li:hover img {
+    opacity: 0;
+}
+
+.ul_gnav li img {
+    opacity: 1;
+    transition: all .4s;
+}
+
+.ul_gnav li a {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 100%;
+    background-color: rgb(145,19,15);
+    z-index: -1;
+}
+/* 回到顶点btn */
+.btn_top {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    width: 36px;
+    height: 51px;
+    z-index: 200;
+}
+
+/* 主体部分 */
+.index_main {
+    position: relative;
+    height: 780px;
+    width: 100%;
+    min-height: 780px;
+    max-height: 880px;
+    background-color: #000;
+    overflow: hidden;
+    z-index: -2;
+}
+/* 回到顶部 */
+.btn_top::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/common/btn_ptop_on.png) no-repeat ;
+    transition: all .4s;
+    opacity: 0;
+
+}
+.btn_top:hover img {
+    opacity: 1;
+    transition: all .4s;
+}
+.btn_top:hover img {
+    opacity: 0;
+}
+.btn_top:hover::after {
+    opacity: 1;
+}
+/* 主视觉图 */
+.mainchar {
+    position: absolute;
+    top: 190px;
+    left: 440px;
+    z-index: 100;
+}
+.mainchar_02 {
+    position: absolute;
+    left: 383px;
+    z-index: 90;
+}
+.mainvisual_bg {
+    position: absolute;
+    top: 0;
+    left: 430px;
+}
+.img_copy02 {
+    position: absolute;
+    right: 162px;
+    top: 280px;
+}
+.img_copy02 img {
+    width: 90%;
+}
+.img_copy0202 {
+    position: absolute;
+    left: 90px;
+    top: 320px;
+    z-index: 101;
+}
+.img_copy0202 img {
+    width: 90%;
+}
+.bg_set {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/common/bg_mv04.png) ,url(../img/common/bg_mv03.png) ,url(../img/common/bg_mv02.png)
+    ,url(../img/common/bg_pat.png) ,url(../img/common/bg_mv01.png);
+    background-repeat: repeat-x ,no-repeat ,no-repeat ,no-repeat ,repeat;
+    background-position: 50% 100% , 50% 100% , 0 100% ,50% 0 ,0 0;
+}
+/* main左侧黑三角 */
+.bg_set2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/common/bg_mv05.png) no-repeat 0 100%;
+    z-index: 100;
+}
+/* 背景樱花 */
+.flower1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/common/flower_l02.png) no-repeat 95px 890px ,url(../img/common/flower_r02.png) no-repeat 1300px 650px;
+}
+.flower2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/common/flower_r01.png) no-repeat 1460px 1050px;
+}
+.flower3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/common/flower_l01.png) no-repeat 55px 1450px ,url(../img/common/flower_r03.png) no-repeat 1340px 1580px;
+}
+
+/* 主页新闻 */
+.index_news {
+    position: relative;
+    height: 419px;
+    width: 100%;
+    background: url(../img/common/bg_cor01.png) no-repeat -220px 0;
+    background-color: rbg(145,19,15);
+    background-color: rgb(145,19,15);
+}
+.news_box {
+    width: 960px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    padding: 80px 0;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+/* 更多 */
+.ttl_news {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    z-index: 1000;
+}
+.a_btn_more {
+    position: absolute;
+    top: 200px;
+    left: 0;
+
+}
+.a_btn_more:hover::after {
+    opacity: 1;
+}
+.a_btn_more:hover img {
+    opacity: 0;
+    transition: all .4s;
+    
+}
+.a_btn_more::after {
+content: '';
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background: url(../img/common/btn_more_on.png) no-repeat;
+opacity: 0;
+transition: all .4s;
+
+}
+/* 更多end */
+/* 内部的新闻部分 */
+.ul_news_inner {
+    margin-left: 140px;
+}
+.lnner_news {
+    float: left;
+    width: 160px;
+    margin-right: 60px;
+}
+.lnner_news a::before {
+    content: '';
+    display: block;
+    width: 160px;
+    height: 160px;
+    background: url(../img/common/thumb_default.jpg) no-repeat;
+    background-size: 100% auto;
+}
+.lnner_news:last-child {
+    margin: 0;
+}
+.date {
+    margin: 15px 0 10px;
+    font-size: 12px;
+    color: #c3ba78;
+}
+/* 用CSS模仿动画 */
+.news_content {
+    color: #000;
+    font-size: 13px;
+    width: 100%;
+    line-height: 1.2;
+}
+span {position: relative;
+    display: inline-block;
+    transition: all .4s;
+}
+.span1 {
+    margin-bottom: 10px;
+}
+/* 这一段是字下面的背景颜色，我需要让鼠标触碰时，这个背景色从左到右填满，所以给它设置了0的宽度。 */
+span::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgb(0,0,0);
+    z-index: -1;
+}
+.lnner_news a:hover span:nth-of-type(1):after {
+    animation: jianbian .15s forwards;
+    animation-direction: alternate;
+}
+.lnner_news a:hover span:nth-of-type(2):after {
+    animation: jianbian .15s .08s forwards;
+    animation-direction: alternate;
+}
+.lnner_news a:hover span {
+    color: rgb(109, 2, 2);
+}
+@keyframes jianbian {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+/* 用CSS模仿动画 end*/
+/* 底部推特部分 */
+.index_tw {
+    position: relative;
+    background: url(../img/common/bg_flower01.png) no-repeat 50% 100%;
+    background-color: #000;
+}
+.tw_inner {
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+    padding: 100px 0 90px 150px;
+    z-index: 100;
+    box-sizing: border-box;
+}
+.tw_tw {
+    position: absolute;
+    top: -10px;
+    left: 0;
+}
+.bg_wiget {
+    overflow: hidden;
+    width: 400px;
+    height: 520px;
+    background: url(../img/common/bg_widget.png) no-repeat;
+}
+.tw_content {
+    margin-top: 75px;
+    margin-left: 44px;
+    color: rgb(213,51,49);
+    font-size: 14px;
+}
+.saido_img {
+    position: absolute;
+    top: 80px;
+    right: 0;
+}
